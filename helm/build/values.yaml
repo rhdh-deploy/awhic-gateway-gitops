@@ -1,0 +1,15 @@
+app:
+  name: awhic-poi-gateway-app
+  namespace: awhic
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/awhic-gateway
+  org: rhdh-deploy
+  name: awhic-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: awhic/poi-gateway-app
+  tag: latest
